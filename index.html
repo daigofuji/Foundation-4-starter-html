@@ -2,88 +2,129 @@
 <!--[if IE 8]> 			<html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
+<!-- 
+  Starter file for Daigo Fujiwara.
+  github: https://github.com/daigofuji/Foundation-4-starter-html
+  Trying to use hNews mincroformat specification:
+  http://www.readability.com/developers/guidelines
+
+-->
+
 <head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title></title>
+  <title>PAGE TITLE</title>
+  <meta name="description" content="PUT DESCRIPTION HERE" />
+  <meta name="keywords" content="PUT KEYWORDS HERE SEPERATED BY COMMAS" />
 
-  
+  <!-- Mobile Specific Metas. Consider: maximum-scale=1
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS  Get: http://www.google.com/fonts/
+  ================================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Ah, the favicon.
+  ================================================== -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
+  Twitter: https://dev.twitter.com/docs/cards/types/summary-card
+  ============================== -->
+  <meta property="og:title" content="TITLE"/>
+  <meta property="og:site_name" content="SITE NAME"/>
+  <meta property="og:url" content="http://URL"/>
+  <meta property="og:description" content="DESCRIPTION"/>
+  <meta property="og:image" content="http://IMAGEURL"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@TWITTERHANDLE">
+  <meta name="twitter:title" content="TITLE">
+  <meta name="twitter:description" content="DESCRIPTION">
+  <meta name="twitter:image" content="http://IMAGEURL">
   
 
-  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
 </head>
+
+
 <body>
-<nav class="top-bar">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><a href="#">Top Bar Title </a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
 
-  <section class="top-bar-section">
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li class="divider"></li>
-      <li class="active"><a href="#">Main Item 1</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Main Item 2</a></li>
-      <li class="divider"></li>
-      <li class="has-dropdown"><a href="#">Main Item 3</a>
 
-        <ul class="dropdown">
-          <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
 
-            <ul class="dropdown">
-              <li><label>Dropdown Level 2 Label</label></li>
-              <li><a href="#">Dropdown Level 2a</a></li>
-              <li><a href="#">Dropdown Level 2b</a></li>
-              <li><a href="#">Dropdown Level 2c</a>
-              </li>
-              <li><a href="#">Dropdown Level 2d</a></li>
-              <li><a href="#">Dropdown Level 2e</a></li>
-              <li><a href="#">Dropdown Level 2f</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Dropdown Level 1b</a></li>
-          <li><a href="#">Dropdown Level 1c</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Dropdown Level 1d</a></li>
-          <li><a href="#">Dropdown Level 1e</a></li>
-          <li><a href="#">Dropdown Level 1f</a></li>
-          <li class="divider"></li>
-          <li><a href="#">See all &rarr;</a></li>
-        </ul>
+  <!-- TOP NAV
+  ================================================== -->
+
+  <header>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="#">Top Bar Title </a></h1>
       </li>
-      <li class="divider"></li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
 
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="divider hide-for-small"></li>
-      <li class="has-form">
-        <form>
-          <div class="row collapse">
-            <div class="small-8 columns">
-              <input type="text">
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li class="divider"></li>
+        <li class="active"><a href="#">Main Item 1</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Main Item 2</a></li>
+        <li class="divider"></li>
+        <li class="has-dropdown"><a href="#">Main Item 3</a>
+
+          <ul class="dropdown">
+            <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+              <ul class="dropdown">
+                <li><a href="#">Dropdown Level 2a</a></li>
+                <li><a href="#">Dropdown Level 2b</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown Level 1b</a></li>
+            <li><a href="#">Dropdown Level 1c</a></li>
+            
+          </ul>
+        </li>
+        <li class="divider"></li>
+      </ul>
+
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="divider hide-for-small"></li>
+        <li class="has-form">
+          <form>
+            <div class="row collapse">
+              <div class="small-8 columns">
+                <input type="text">
+              </div>
+              <div class="small-4 columns">
+                <a href="#" class="alert button"><i class="icon-search"></i></a>
+              </div>
             </div>
-            <div class="small-4 columns">
-              <a href="#" class="alert button">Search</a>
-            </div>
-          </div>
-        </form>
-      </li>
-      <li class="divider show-for-small"></li>
-      <li class="has-form">
-        <a class="button" href="#">Button!</a>
-      </li>
-    </ul>
-  </section>
-</nav>
+          </form>
+        </li>
+        <li class="divider show-for-small"></li>
+        <li class="has-form">
+          <a class="button" href="#">Button!</a>
+        </li>
+      </ul>
+    </section>
+  </nav>
+
+  <!-- TOP AREA 8/4
+  ================================================== -->
+
+
 	<div class="row">
 		<div class="large-12 columns">
 			<h2>Welcome to Daigo's Foundation starter file</h2>
@@ -172,6 +213,11 @@
 		</div>
 	</div>
 
+  <!-- Middle area full 12
+  ================================================== -->
+
+
+
 	<div class="row">
 			<div class="large-12 columns">
 
@@ -204,15 +250,20 @@
 
 
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
+  <!-- Footer
+  ================================================== -->
+
+  <footer class="row">
+      <div class="large-12 columns">
+
+      </div>
+  </footer>
+
+  <!-- Zepto (http://zeptojs.com/) is great, but I am sticking with jQuery. Sorry! -->
   
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/foundation.min.js"></script>
   <!--
-  
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.interchange.js"></script>
   <script src="js/foundation/foundation.abide.js"></script>
@@ -229,11 +280,13 @@
   <script src="js/foundation/foundation.orbit.js"></script>
   <script src="js/foundation/foundation.section.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
-  
   -->
   
   <script>
     $(document).foundation();
   </script>
+  <script src="js/script.js"></script>
+
+
 </body>
 </html>
