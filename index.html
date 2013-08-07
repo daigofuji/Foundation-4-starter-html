@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 8]> 			<html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 
 <!-- 
@@ -7,7 +7,8 @@
   github: https://github.com/daigofuji/Foundation-4-starter-html
   Trying to use hNews mincroformat specification:
   http://www.readability.com/developers/guidelines
-
+  Use with those template
+  http://foundation.zurb.com/templates.php
 -->
 
 <head>
@@ -28,8 +29,9 @@
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive-tables.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- Ah, the favicon.
   ================================================== -->
@@ -44,7 +46,7 @@
   <meta property="og:description" content="DESCRIPTION"/>
   <meta property="og:image" content="http://IMAGEURL"/>
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@TWITTERHANDLE">
+  <meta name="twitter:site" content="@DaigoFuji">
   <meta name="twitter:title" content="TITLE">
   <meta name="twitter:description" content="DESCRIPTION">
   <meta name="twitter:image" content="http://IMAGEURL">
@@ -63,64 +65,60 @@
   ================================================== -->
 
   <header>
-  <nav class="top-bar">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1><a href="#">Top Bar Title </a></h1>
-      </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-    </ul>
-
-    <section class="top-bar-section">
-      <!-- Left Nav Section -->
-      <ul class="left">
-        <li class="divider"></li>
-        <li class="active"><a href="#">Main Item 1</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Main Item 2</a></li>
-        <li class="divider"></li>
-        <li class="has-dropdown"><a href="#">Main Item 3</a>
-
-          <ul class="dropdown">
-            <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
-              <ul class="dropdown">
-                <li><a href="#">Dropdown Level 2a</a></li>
-                <li><a href="#">Dropdown Level 2b</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown Level 1b</a></li>
-            <li><a href="#">Dropdown Level 1c</a></li>
-            
-          </ul>
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="#">Top Bar Title </a></h1>
         </li>
-        <li class="divider"></li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
       </ul>
 
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider hide-for-small"></li>
-        <li class="has-form">
-          <form>
-            <div class="row collapse">
-              <div class="small-8 columns">
-                <input type="text">
-              </div>
-              <div class="small-4 columns">
-                <a href="#" class="alert button"><i class="icon-search"></i></a>
-              </div>
-            </div>
-          </form>
-        </li>
-        <li class="divider show-for-small"></li>
-        <li class="has-form">
-          <a class="button" href="#">Button!</a>
-        </li>
-      </ul>
-    </section>
-  </nav>
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="divider"></li>
+          <li class="active"><a href="#">Main Item 1</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Main Item 2</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Main Item 3</a>
 
+            <ul class="dropdown">
+              <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+                <ul class="dropdown">
+                  <li><a href="#">Dropdown Level 2a</a></li>
+                  <li><a href="#">Dropdown Level 2b</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown Level 1b</a></li>
+              <li><a href="#">Dropdown Level 1c</a></li>
+              
+            </ul>
+          </li>
+          <li class="divider"></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="divider hide-for-small"></li>
+          <li class="has-form">
+            <form>
+              <div class="row collapse">
+                <div class="small-8 columns">
+                  <input type="text">
+                </div>
+                <div class="small-4 columns">
+                  <a href="#" class="button"><i class="icon-search"></i></a>
+                </div>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
   <!-- TOP AREA 8/4
   ================================================== -->
 
@@ -175,39 +173,18 @@
 				</div>
 			</div>
 
-			<h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
+			
 		</div>
 
 		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-
-			<dl class="sub-nav">
-			  <dt>Filter:</dt>
-			  <dd class="active"><a href="#">All</a></dd>
-			  <dd><a href="#">Active</a></dd>
-			  <dd><a href="#">Pending</a></dd>
-			  <dd><a href="#">Suspended</a></dd>
-			</dl>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+			
 
 			<h4>Other Resources</h4>
 			<p>Once you've exhausted the fun in this document, you should check out:</p>
 			<ul class="disc">
 				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+        <li><a href="http://foundation.zurb.com/templates.php">Foundation templates</a><br /> User those template.</li>
+        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
 				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
 			</ul>
 		</div>
@@ -252,12 +229,25 @@
 
   <!-- Footer
   ================================================== -->
-
-  <footer class="row">
-      <div class="large-12 columns">
-
+  <footer role="contentinfo" class="site-footer">
+    <div class="row"> 
+      <div class="large-6 columns">
+        <p class="copyright">Copyright &copy; 2013 Daigo Fujiwara. Built using Foundation 4.3.1</p>
       </div>
+      <div class="large-6 columns">
+        <dl class="sub-nav right">
+          <dt class="quiet">Keep in touch:</dt>
+          <dd><a href="#"><i class="icon-twitter-sign icon-large"></i></a></dd>
+          <dd><a href="#"><i class="icon-github-sign icon-large"></i></a></dd>
+          <dd><a href="#"><i class="icon-linkedin-sign icon-large"></i></a></dd>
+        </dl>
+      </div>
+    </div>
   </footer>
+
+
+  <!-- Loading JavaScripts
+  ================================================== -->
 
   <!-- Zepto (http://zeptojs.com/) is great, but I am sticking with jQuery. Sorry! -->
   
@@ -281,10 +271,10 @@
   <script src="js/foundation/foundation.section.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
   -->
-  
   <script>
     $(document).foundation();
   </script>
+  <script src="js/responsive-tables.js"></script>
   <script src="js/script.js"></script>
 
 

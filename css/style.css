@@ -44,6 +44,23 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
+
+/* */
+.quiet {
+	color:#aaa;
+}
+
+/* footer */
+
+footer {
+	background-color: #dae4ee;
+	margin-top: 50px;
+	padding: 30px 0;
+}
+.copyright {
+	font-size: .75em; /* 12px */
+}
+
 /* 
 	Media queries. 
 	Always use min-width and declare mobile first, override with desktop 
