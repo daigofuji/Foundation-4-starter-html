@@ -13,6 +13,8 @@ Also, I've added off-canvas layout
 http://foundation.zurb.com/off-canvas.php
 for foundation 4.
 
+If you want a single page without css or js folder structure, I created a version with everything linked directly to cndjs: standalone.html
+
 I created this for my personal use, but if you'd like to use it, please feel free. 
 Shout out to http://daigo.org or @DaigoFuji are appreciated.
 
